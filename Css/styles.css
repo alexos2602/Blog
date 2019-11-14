@@ -1,0 +1,28 @@
+body{ /* quitar margenes a body */
+    margin: 0;
+}
+
+header{
+    background: #253A46;
+    display: flex; /* The flex property sets the flexible length on flexible items. los coloca uno a lado del otro */
+    justify-content: space-between;
+    /* height: 50px;  alto de header */
+}
+
+nav{
+    background: paleturquoise;
+}
+
+nav ul{ /* los ul que estan drentro de nav */
+    display: flex;
+}
+
+nav li{/* a los LI  */
+    list-style: none;
+    margin: 0 10px; /* arribaabajo costados */
+}
+
+nav a{ /* las letras de nav */
+    color: white;
+    text-decoration: none;
+}
