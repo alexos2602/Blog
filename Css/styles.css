@@ -1,16 +1,19 @@
 body{ /* quitar margenes a body */
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header{
     background: #253A46;
+    padding: 0 10px; /* arribaabbajo costados puede ser padding left or right*/
     display: flex; /* The flex property sets the flexible length on flexible items. los coloca uno a lado del otro */
     justify-content: space-between;
+    align-items: center; /* alinear items verticalmente*/
     /* height: 50px;  alto de header */
 }
 
 nav{
-    background: paleturquoise;
+    /* background: paleturquoise; */
 }
 
 nav ul{ /* los ul que estan drentro de nav */
@@ -19,7 +22,17 @@ nav ul{ /* los ul que estan drentro de nav */
 
 nav li{/* a los LI  */
     list-style: none;
-    margin: 0 10px; /* arribaabajo costados */
+    /* margin: 0 10px; */ /* arribaabajo costados */
+    color: white;
+}
+
+nav li:after{ /* colocar el pad al menu de navegacion */
+    content: "|";
+    margin: 0 10px; /* colorcar los pad centrados  */
+}
+
+nav li:last-child:after{
+    display: none;
 }
 
 nav a{ /* las letras de nav */
