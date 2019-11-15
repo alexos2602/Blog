@@ -54,7 +54,24 @@ h1{ /* para quitar margen que tiene por defector h1 */
     padding: 20px;
 }
 
-.cont-blog{
+.cont-blog{ /* contenedor de portada */
     width: 1000px;
     margin: auto;
+}
+
+.blog-items{ /* contenedor de items */
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;  margen distribuido a los lados */
+    justify-content: space-between; /* igual pero entre ellos y no a los lados */
+}
+
+.blog-items h3{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.item-blog{ /* contenedor de cada item */
+    width: 300px;
+
 }
