@@ -12,10 +12,6 @@ header{
     /* height: 50px;  alto de header */
 }
 
-nav{
-    /* background: paleturquoise; */
-}
-
 nav ul{ /* los ul que estan drentro de nav */
     display: flex;
 }
@@ -38,4 +34,27 @@ nav li:last-child:after{
 nav a{ /* las letras de nav */
     color: white;
     text-decoration: none;
+}
+
+h1{ /* para quitar margen que tiene por defector h1 */
+    margin: 0;
+    font-weight: 600;
+}
+
+.portada{
+    /* border: 5px solid red; */
+    position: relative; /* para poder usar las psiciones */
+}
+
+.portada .description{
+    background: rgba(220, 220, 221, 0.8);
+    position: absolute; /* it's positioned relative to its first positioned(no static) ancestor element */
+    bottom: 30px; /* para lococar en la parte inferior */
+    left: 20px; /* lado */
+    padding: 20px;
+}
+
+.cont-blog{
+    width: 1000px;
+    margin: auto;
 }
