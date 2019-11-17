@@ -13,6 +13,36 @@ header{
     /* height: 50px;  alto de header */
 }
 
+.header-right{/* para que el dive pueda heredar */
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.header-right .buttom{
+    margin-left: 10px;
+}
+
+.buttom{
+    background:gray;
+    /* border-bottom: 5px solid black; */
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .3);
+    font-size: 14px;
+    padding: 5px 10px 10px;/* arib costados abajo*/
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+} 
+
+.buttom:active{
+    transform: scale(.9);
+}
+
+.buttom.red{
+    background: #ff4842;
+}
+
 nav{
     height: inherit; /* para heredar alto de header */
 }
@@ -44,7 +74,11 @@ nav li:last-child:after{
 nav a:hover{
     /* border-top: 5px solid red; */ /* pero modifica el tamaño */
     /* box-shadow: donde se ubica la sombra x y difuminado color; */
-    box-shadow: inset 0 5px 0 red; /*esto no modifica porque no parte del modelo de caja */
+    box-shadow: inset 0 5px 0 red !important; /*esto no modifica porque no parte del modelo de caja IMPORTANT para que se coloque encima del verde*/
+}
+
+nav a.is-active{
+    box-shadow: inset 0 5px 0 #7dcd40;
 }
 
 nav a{ /* las letras de nav */
