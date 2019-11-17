@@ -105,6 +105,7 @@ h1{ /* para quitar margen que tiene por defector h1 */
 .portada{
     /* border: 5px solid red; */
     position: relative; /* para poder usar las psiciones */
+    margin-bottom: 20px;
 }
 
 .portada .description{
@@ -129,12 +130,16 @@ h1{ /* para quitar margen que tiene por defector h1 */
 
 .blog-items h3{
     font-weight: 600;
-    margin: 10px 0;
+    margin: 10px 0 15px;
 }
 
 .item-blog{ /* contenedor de cada item */
     width: 300px;
 
+}
+
+.item-blog .description{
+    margin-bottom: 15px;
 }
 
 .paginador{ /* para centrar */
